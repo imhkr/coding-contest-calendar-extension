@@ -21,9 +21,7 @@ btn.addEventListener("click", async () => {
         colorValue.innerText = color;
         try {
           await navigator.clipboard.writeText(color);
-        } catch (err) {
-          console.error(err);
-        }
+        } catch (err) {}
       }
     }
   );
