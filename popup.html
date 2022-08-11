@@ -2,16 +2,36 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="popup.css" />
+    <script src="popup.js"></script>
   </head>
   <body>
-    <div class="wrapper">
-      <h2>Hi,Click Below Button To Pluck</h2>
-      <button class="changeColorBtn">Pick color</button>
-      <div class="selectedColor">
-        <span class="colorGrid" placeholder="Your Shade"></span>
-        <span class="colorValue"></span>
+    <div class="container">
+      <div class="box">
+        <span></span>
+        <div class="content">
+          <input
+            type="text"
+            id="myInput"
+            onkeyup="myFunction()"
+            placeholder="Search For Contest.."
+          />
+          <h1 class="heading">Upcoming Contests</h1>
+          <div class="test">
+            <table class="table-fill" id="myTable">
+              <thead>
+                <tr>
+                  <th>Contest Name</th>
+                  <th>Start</th>
+                  <th>End</th>
+                  <th>Host</th>
+                  <th>Link</th>
+                </tr>
+              </thead>
+              <tbody id="table-body"></tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
-    <script src="popup.js"></script>
   </body>
 </html>

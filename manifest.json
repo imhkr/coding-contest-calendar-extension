@@ -1,19 +1,19 @@
 {
-  "name": "Plunk Color",
-  "description": "A color picker extension that can pick color from website and computer programs.",
+  "name": "Coding Contest Calendar",
+  "description": "Coding Contest Calendar show all ongoing and upcoming coding contest at one click .",
   "version": "1.0",
   "manifest_version": 3,
   "background": {
     "service_worker": "background.js"
   },
   "permissions": ["storage", "activeTab", "scripting"],
-  "options_page": "options.html",
   "action": {
     "default_popup": "popup.html"
   },
+  "host_permissions": ["<all_urls>"],
   "icons": {
-    "16": "/images/picker_16.png",
-    "32": "/images/picker_32.png",
-    "48": "/images/picker_48.png"
+    "16": "/images/icon_16.png",
+    "32": "/images/icon_48.png",
+    "48": "/images/icon_96.png"
   }
 }
